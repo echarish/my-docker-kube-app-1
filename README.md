@@ -6,30 +6,30 @@ This project works on creating a microservie sample on docker and kubernates
 
 **DOCKER**
 
-* docker build -t echarish/my-app .
-* docker run -p 49160:3000 -d echarish/my-app
-* docker logs <container id>
-* docker exec -it <container id> /bin/bash
+* _docker build -t echarish/my-app ._
+* _docker run -p 49160:3000 -d echarish/my-app_
+* _docker logs <container id>_
+* _docker exec -it <container id> /bin/bash_
 
 
 **TO PUSH INTO GCP**
 * docker tag [SOURCE_IMAGE] [HOSTNAME]/[PROJECT-ID]/[IMAGE]
-  * docker tag echarish/my-app asia.gcr.io/firstdemoproject-250304/my-app
-* docker push asia.gcr.io/firstdemoproject-250304/my-app
+  * _docker tag echarish/my-app asia.gcr.io/firstdemoproject-250304/my-app_
+* _docker push asia.gcr.io/firstdemoproject-250304/my-app_
 
 **I am using Minikube for my kubernates**
 
 Some important commands for minikube
-* minikube start
+* _minikube start_
   * This is to start minikube
-* minikube dashboard
+* _minikube dashboard_
   * If you like working with dashboard GUI
-* minikube tunnel
+* _minikube tunnel_
   * If you create a service loadbalancer run above command to get external IP enabled
 
 
 Some important commands for cubectl
-* cubectl create -f <File_Name>
+* _cubectl create -f <File_Name>_
   * File_Name can be your deployement.yaml or service.yaml etc
 
 
