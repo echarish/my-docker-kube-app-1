@@ -4,6 +4,12 @@ This project works on creating a microservie sample on docker and kubernates
 
 #### Some important commands that I use are below
 
+**Starting and Running Node App**
+* _My_Book_API_MS=localhost:8080 PORT=3000 npm run watch_
+* process.env.My_Book_API_MS
+* process.env.PORT 
+
+
 **DOCKER**
 
 * _docker build -t echarish/my-app ._

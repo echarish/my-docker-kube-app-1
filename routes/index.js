@@ -1,12 +1,13 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+
+const router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function(_req, res) {
 
-  var datetime = new Date();
+  const datetime = new Date();
 
-  res.render('index', { title: 'My-APP' , currentTime : datetime });
+  res.render('index', { title: 'My-APP MicroService test' , currentTime : datetime });
 });
 
 module.exports = router;
